@@ -1,0 +1,11 @@
+{
+  "name": "send-email-api",
+  "version": "1.0.0",
+  "description": "Example send e-mail using NodeJS with Nodemailer ",
+  "main": "app.js",
+  "author": "Marcos Lacerda <markos.lacerda@gmail.com>",
+  "dependencies": {
+    "express": "*",
+    "nodemailer": "*",
+  }
+}
