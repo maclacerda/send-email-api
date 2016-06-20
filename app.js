@@ -8,11 +8,11 @@ var app = express();
 var nodemailer = require('nodemailer');
 
 var transporter = nodemailer.createTransport({
-    host: 'email-ssl.com.br',
-    port: 465,
+    host: 'your custom smtp server',
+    port: 0, // your custom smtp server port
     auth: {
-        user: 'noreply@dreamsteam.com.br',
-        pass: 'Dreamsteam8'
+        user: 'your custom smtp user',
+        pass: 'your custom smtp password'
     }
   }
 );
@@ -21,7 +21,7 @@ app.get('/sendmail/:email', function (req, res) {
   console.log('Sending e-mail to: ' + req.params['email']);
 
   var email = {
-    from : 'noreply@dreamsteam.com.br',
+    from : 'your from email',
     to : req.params['email'],
     subject: 'E-mail Test',
     text: '',

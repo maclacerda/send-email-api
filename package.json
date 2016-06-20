@@ -6,6 +6,6 @@
   "author": "Marcos Lacerda <markos.lacerda@gmail.com>",
   "dependencies": {
     "express": "*",
-    "nodemailer": "*",
+    "nodemailer": "*"
   }
 }
